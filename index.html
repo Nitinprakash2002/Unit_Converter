@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Converter</title>
+        <link rel="stylesheet" href="bootstrap.css">
+        <script src="bootstrap.js"></script>
+        <link rel="stylesheet" href="beauty.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <script src="pag1.js"></script>
+        <style>
+            body{
+                background-color:white;
+            }
+            @media only screen and (max-width: 400px){
+                .class2{
+                    width:350px;
+                    height:600px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="class1">
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div style="position:absolute">
+                        <select style="position:absolute;top:5vh;" onchange="location=this.value">
+                            <option value=index.html>Weight And Mass Converter</option>
+                            <option value=page2.html>Volume Converter</option>
+                            <option value="page3.html">Temperature Converter</option>
+                            <option value="page4.html">Area Converter</option>
+                            <option value="page5.html">Pressure Converter</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8">
+                    <h2 style="position:absolute;left:70vw;">Unit Converter</h2>
+                </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-xl-4 col-md-3 col-sm-12"></div>
+                <div class="col-lg-4 col-xl-6 col-md-6 col-sm-12 gy-4">
+                    <div class="class2">
+                        <div style="position:absolute;left:10px;">
+                        <input type="button" class="btn btn-success" num="" id="kgtg" value="Kg->g" onclick="reaction(1)">
+                        <input type="button" class="btn btn-success" num="" id="kgtlb"value="Kg->lbs" onclick="reaction(2)">
+                        <input type="button" class="btn btn-success" num="" id="gtkg" value="g->kg" onclick="reaction(3)">
+                        <input type="button" class="btn btn-success" num="" id="gtmg" value="g->mg" onclick="reaction(4)"><br><br>
+                        <input type="button" class="btn btn-success" num="" id="mgtg" value="mg->g" onclick="reaction(5)">
+                        </div>
+                        <div class="class21">
+                            Amount:&ensp;&ensp;<input type="text" placeholder="Enter the Amout " id="get" value="" onkeyup="reaction1(100)"><br><br>
+                            From:&ensp;&ensp;&ensp;&ensp;&ensp;<input type="text" id="1" placeholder="" readonly><br><br>
+                            To:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input id="11" type="text" placeholder="" readonly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
